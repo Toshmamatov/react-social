@@ -1,16 +1,18 @@
 import React from "react";
 import "./topbar.css";
 import { Search, Person, Chat, Notifications } from "@mui/icons-material";
+import logo from "../../assets/images/person/Jane.jpeg";
 
 const Topbar = () => {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="logo">Social App</span>
+        <span className="topbarLogo">Social App</span>
       </div>
+
       <div className="topbarCenter">
         <div className="searchBar">
-          <Search />
+          <Search className="searchIcon" />
           <input
             className="searchInput"
             type="text"
@@ -18,10 +20,11 @@ const Topbar = () => {
           />
         </div>
       </div>
+
       <div className="topbarRight">
         <div className="topbarLinks">
-          <span className="topbarlink">Homepage</span>
-          <span className="topbarlink">Timeline</span>
+          <span className="topbarLink">Homepage</span>
+          <span className="topbarLink">Timeline</span>
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
@@ -36,8 +39,8 @@ const Topbar = () => {
             <Notifications />
             <span className="topbarIconBadge">3</span>
           </div>
-          <img src="/public/assets/gift.png" alt="man" />
         </div>
+        <img src={logo} alt="man" className="topbarImage" />
       </div>
     </div>
   );
