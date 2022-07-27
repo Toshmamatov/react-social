@@ -11,7 +11,6 @@ import { Users } from "../../dummyDaata";
 const Post = ({ post }) => {
   const [like, setLike] = useState(post.like);
   const [isLiked, setIsLiked] = useState(false);
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
   const likeHandler = () => {
     setLike(isLiked ? like - 1 : like + 1);
@@ -39,19 +38,19 @@ const Post = ({ post }) => {
         </div>
         <div className="postCenter">
           <span className="postText">{post?.desc}</span>
-          <img className="postImg" src={PF + post.photo} alt="station" />
+          <img className="postImg" src={post.photo} alt="station" />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
             <img
               className="postLikeIcon"
-              src={`${PF}images/like.png`}
+              src="assets/images/like.png"
               onClick={likeHandler}
               alt="like"
             />
             <img
               className="postLikeIcon"
-              src={`${PF}images/heart.png`}
+              src="assets/images/heart.png"
               onClick={likeHandler}
               alt="heart"
             />

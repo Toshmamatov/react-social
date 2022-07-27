@@ -4,6 +4,7 @@
   overflow-y: scroll;
   position: sticky;
   top: 50px;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
@@ -34,6 +35,10 @@
   margin-bottom: 20px;
 }
 
+.sidebarListItem :hover {
+  color: blue;
+}
+
 .sidebarIcon {
   margin-right: 15px;
 }
@@ -44,6 +49,12 @@
   padding: 10px;
   border-radius: 5px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.sidebarButton:hover {
+  background-color: black;
+  color: #fff;
 }
 
 .sidebarHr {

@@ -4,7 +4,6 @@ import { Users } from "../../dummyDaata";
 import Online from "../online/online";
 
 const Rightbar = ({ profile }) => {
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const HomeRightbar = () => {
     return (
       <>
@@ -52,7 +51,7 @@ const Rightbar = ({ profile }) => {
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
             <img
-              src={`${PF}images/person/Munisa.jpeg`}
+              src="assets/images/person/Munisa.jpeg"
               alt="girl"
               className="rightbarFollowingImg"
             />
@@ -61,7 +60,7 @@ const Rightbar = ({ profile }) => {
 
           <div className="rightbarFollowing">
             <img
-              src={`${PF}images/person/Alex.jpeg`}
+              src="assets/images/person/Munisa.jpeg"
               alt="girl"
               className="rightbarFollowingImg"
             />
@@ -70,7 +69,7 @@ const Rightbar = ({ profile }) => {
 
           <div className="rightbarFollowing">
             <img
-              src={`${PF}images/person/Jane.jpeg`}
+              src="assets/images/person/Munisa.jpeg"
               alt="girl"
               className="rightbarFollowingImg"
             />
@@ -79,7 +78,7 @@ const Rightbar = ({ profile }) => {
 
           <div className="rightbarFollowing">
             <img
-              src={`${PF}images/person/Jack.jpeg`}
+              src="assets/images/person/Munisa.jpeg"
               alt="girl"
               className="rightbarFollowingImg"
             />
@@ -88,7 +87,7 @@ const Rightbar = ({ profile }) => {
 
           <div className="rightbarFollowing">
             <img
-              src={`${PF}images/person/Sabina.jpeg`}
+              src="assets/images/person/Munisa.jpeg"
               alt="girl"
               className="rightbarFollowingImg"
             />
@@ -97,7 +96,7 @@ const Rightbar = ({ profile }) => {
 
           <div className="rightbarFollowing">
             <img
-              src={`${PF}images/person/Lily.jpeg`}
+              src="assets/images/person/Munisa.jpeg"
               alt="girl"
               className="rightbarFollowingImg"
             />
