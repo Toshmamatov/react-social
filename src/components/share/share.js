@@ -1,6 +1,6 @@
 import React from "react";
 import "./share.css";
-import Amanda from "../../assets/images/person/Amanda.jpeg";
+// import Amanda from "../../assets/images/person/Amanda.jpeg";
 import { PermMedia, Label, Room, EmojiEmotions } from "@mui/icons-material";
 
 const Share = () => {
@@ -8,7 +8,11 @@ const Share = () => {
     <div className="share">
       <div className="shareWrapper">
         <div className="shareTop">
-          <img className="shareProfileImg" src={Amanda} alt="amanda" />
+          <img
+            className="shareProfileImg"
+            src="/assets/images/person/Amanda.jpeg"
+            alt="amanda"
+          />
           <input
             placeholder="What's in your mind Safa?"
             className="shareInput"

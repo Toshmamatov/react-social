@@ -1,13 +1,15 @@
 import React from "react";
 import "./topbar.css";
 import { Search, Person, Chat, Notifications } from "@mui/icons-material";
-import logo from "../../assets/images/person/Jane.jpeg";
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="topbarLogo">Social App</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="topbarLogo">Social App</span>
+        </Link>
       </div>
 
       <div className="topbarCenter">
@@ -40,7 +42,11 @@ const Topbar = () => {
             <span className="topbarIconBadge">3</span>
           </div>
         </div>
-        <img src={logo} alt="man" className="topbarImage" />
+        <img
+          src="/assets/images/person/Jane.jpeg"
+          alt="man"
+          className="topbarImage"
+        />
       </div>
     </div>
   );
